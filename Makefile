@@ -1,30 +1,20 @@
-REBAR_URL ?= http://cloud.github.com/downloads/basho/rebar/rebar
-
-ifneq ($(shell which wget 2>/dev/null),)
-REBAR_GET ?= wget -q $(REBAR_URL)
-else
-REBAR_GET ?= curl -s -f $(REBAR_URL) >rebar
-endif
+REBAR = rebar
 
 .PHONY: all compile doc test clean clean-all
 
 all: compile doc
 
-rebar:
-	$(REBAR_GET)
-	chmod +x rebar
+compile:
+	$(REBAR) compile
 
-compile: rebar
-	./rebar compile
+doc:
+	$(REBAR) doc
 
-doc: rebar
-	./rebar doc
+test:
+	$(REBAR) eunit
 
-test: rebar
-	./rebar eunit
-
-clean: rebar
-	./rebar clean
+clean:
+	$(REBAR) clean
 
 clean-all:
-	rm -rf rebar ebin doc/*{-info,.html,.css,.png}
+	rm -rf ebin doc/*{-info,.html,.css,.png}

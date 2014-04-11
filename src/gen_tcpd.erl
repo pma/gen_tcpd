@@ -1,7 +1,7 @@
 %%% ----------------------------------------------------------------------------
 %%% Copyright 2008
 %%% Martin Carlson, martin@martinc.eu
-%%% Oscar Hellström, oscar@hellstrom.st
+%%% Oscar HellstrÃ¶m, oscar@hellstrom.st
 %%%
 %%% All rights reserved
 %%% Redistribution and use in source and binary forms, with or without
@@ -30,9 +30,9 @@
 %%% OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 %%% SUCH DAMAGE.
 %%% ----------------------------------------------------------------------------
-%%% @copyright 2008 Martin Carlson, Oscar Hellström
+%%% @copyright 2008 Martin Carlson, Oscar HellstrÃ¶m
 %%% @author Martin Carlson <martin@martinc.eu>
-%%% @author Oscar Hellström <oscar@hellstrom.st> [http://oscar.hellstrom.st]
+%%% @author Oscar HellstrÃ¶m <oscar@hellstrom.st> [http://oscar.hellstrom.st]
 %%% @version {@version}, {@date}, {@time}
 %%% @doc
 %%% The gen_tcpd behaviour is a generic way of accepting TCP connections.
